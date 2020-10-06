@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dark_bg"
+    tools:context=".view.fragment.DetailsFragment">
+
+    <FrameLayout
+        android:id="@+id/frame_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_detail"
+            app:cardCornerRadius="6dp"
+            app:cardBackgroundColor="@color/colorDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_detail"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/placeholder_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/image_cover_view_detail"
+            android:layout_gravity="bottom"
+            android:background="@drawable/image_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_list_title_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frame_detail"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/crimson_text"
+        android:text="Quiz Title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/tv_list_desc_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_list_title_detail"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="casual"
+        android:lineHeight="28dp"
+        android:text="Quiz Description"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/ln_difficulty"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv_list_desc_detail"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_list_difficulty_detail"
+            android:textSize="16dp"
+            android:text="Difficulty"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_difficulty_detail"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:text="NA"
+            android:layout_marginRight="32dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_questions"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/ln_difficulty"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_list_questions_detail"
+            android:textSize="16dp"
+            android:text="Total Questions"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_questions_detail"
+            android:textSize="16dp"
+            android:text="NA"
+            android:layout_marginRight="32dp"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/ln_questions"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_list_score_detail"
+            android:textSize="16dp"
+            android:text="You last score"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_score_detail"
+            android:textSize="16dp"
+            android:text="NA"
+            android:layout_marginRight="32dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start_detail"
+        android:background="@drawable/primary_btn_bg"
+        android:text="Start Quiz"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

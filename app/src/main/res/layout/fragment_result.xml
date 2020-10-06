@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dark_bg"
+    tools:context=".view.fragment.ResultFragment">
+
+    <TextView
+        android:id="@+id/tv_title_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:fontFamily="monospace"
+        android:text="Result"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36dp" />
+
+    <FrameLayout
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/pb_result"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="false"
+            android:progress="100"
+            android:progressDrawable="@drawable/circular_progress"
+            android:indeterminateDrawable="@drawable/circular_progress"
+            android:layout_gravity="center"
+            android:layout_width="128dp"
+            android:layout_height="128dp"/>
+
+        <TextView
+            android:id="@+id/tv_percent_result"
+            android:textSize="26dp"
+            android:textColor="@color/colorPrimary"
+            android:text="100%"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_list_correct_result"
+            android:textSize="16dp"
+            android:text="Correct Answers"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_correct_result"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:text="NA"
+            android:layout_marginRight="32dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_list_wrong_result"
+            android:textSize="16dp"
+            android:text="Wrong Answers"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_wrong_result"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:text="NA"
+            android:layout_marginRight="32dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_list_missed_result"
+            android:textSize="16dp"
+            android:text="Questions Missed"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_missed_result"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:text="NA"
+            android:layout_marginRight="32dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorLightText"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_home_result"
+        android:background="@drawable/primary_btn_bg"
+        android:text="Go To Home"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

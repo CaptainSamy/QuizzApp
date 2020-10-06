@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    android:orientation="vertical"
+    tools:context=".view.fragment.QuizFragment">
+
+    <ImageButton
+        android:id="@+id/iBtn_close_quiz"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:src="@drawable/quiz_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_title_quiz"
+        android:textSize="35dp"
+        android:text="Loading Quiz"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_question_number_title"
+                android:text="Question"
+                android:textSize="26dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_quiz_question_number"
+                android:textSize="26dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@+id/quiz_progress"
+                android:progress="100"
+                android:visibility="invisible"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <TextView
+                android:id="@+id/tv_quiz_question_time"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:text="10"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_quiz_question"
+        android:textAlignment="center"
+        android:text="Fetching Data"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_quiz_option_one"
+        android:background="@drawable/outline_light_btn_bg"
+        android:padding="12dp"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        android:text="Option Button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLightText"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_quiz_option_two"
+        android:background="@drawable/outline_light_btn_bg"
+        android:padding="12dp"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        android:text="Option Button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLightText"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_quiz_option_three"
+        android:background="@drawable/outline_light_btn_bg"
+        android:padding="12dp"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        android:text="Option Button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLightText"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_quiz_question_feedback"
+        android:layout_margin="16dp"
+        android:text="Verifying Answer"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_quiz_next"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_margin="32dp"
+        android:background="@drawable/primary_btn_bg"
+        android:text="Next Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
